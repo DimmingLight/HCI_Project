@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/Contact.css">
+    <script src="/Main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <!-- Start of Navigation -->
+            <nav>
+                <img style="margin: 30px;" src="/Img/Logo.png" alt="">
+                <ul>
+                    <li>
+                        <a href="/Html/Home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="/Html/About.html">About</a>
+                    </li>
+                    <li>
+                        <a href="/Html/Event.html">Event</a>
+                    </li>
+                    <li>
+                        <a href="/Html/Pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="/Html/Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <img style="margin: 30px;" src="/Img/Search.svg" alt="">
+            </nav>
+            <!-- END of Navigation -->
+            <div class="hr"></div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <form action="" method="post" id="contact_form" onsubmit="validateForm(event)">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+                <br>
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" name="phonenumber" id="phonenumber" required>
+                <br>
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message" required>
+                <br>
+                <p>Please Choose Between Email and Phone Number for your Contact Method</p>
+                <input type="radio" name="preffer" id="Email" value="email">
+                <label for="Email">Email</label>
+                <br>
+                <input type="radio" name="preffer" id="Phonenumber" value="phonenumber">
+                <label for="Phonenumber">Phone Number</label>
+                <br>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+            <h4 id="error"></h4>
+        </section>
+    </main>
+    <div class="board">
+        <img src="/Img/Board.png" alt="">
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="hr"></div>
+            <div class="content">
+                <div class="left_3">
+                    <img src="/Img/Logo.png" alt="">
+                    <h5>copyright© 1974-2023 Jockey’s conference center inc. all right reserved. </h5>
+                </div>
+                <div class="mid">
+                    <ul>
+                        <li>
+                            <a href="/Html/About.html">Overview</a>
+                        </li>
+                        <li>
+                            <a href="/Html/Event.html">Event</a>
+                        </li>
+                        <li>
+                            <a href="/Html/Pricing.html">Package</a>
+                        </li>
+                        <li>
+                            <a href="/Html/Contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_3">
+                    <h3>Subscribe to our newsletter</h3>
+                    <img src="/Img/Newsletter.png" alt="">
+                    <h3>Social Media</h3>
+                    <div class="social">
+                        <a href="https://www.facebook.com/">
+                            <img src="/Img/FB.svg" alt="">
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <img src="/Img/Twitter.svg" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="/Img/Instagram.svg" alt="">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="/Img/YT.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
